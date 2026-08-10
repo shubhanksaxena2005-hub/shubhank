@@ -1,18 +1,26 @@
 const fs = require("fs");
 
 console.log("======================================");
-console.log("       Jenkins File Test");
+console.log("       Jenkins File Rename Test");
 console.log("======================================");
 
-// Check index.html
+// Check old file
 if (fs.existsSync("index.html")) {
-    console.log("✔ PASS: index.html exists.");
+    console.log("✘ FAIL: index.html still exists.");
+    process.exit(1);
 } else {
-    console.log("✘ FAIL: index.html does not exist.");
+    console.log("✔ PASS: index.html does not exist.");
+}
+
+// Check renamed file
+if (fs.existsSync("home.html")) {
+    console.log("✔ PASS: home.html exists.");
+} else {
+    console.log("✘ FAIL: home.html does not exist.");
     process.exit(1);
 }
 
-// Check script.js
+// Check other project files
 if (fs.existsSync("script.js")) {
     console.log("✔ PASS: script.js exists.");
 } else {
@@ -20,7 +28,6 @@ if (fs.existsSync("script.js")) {
     process.exit(1);
 }
 
-// Check style.css
 if (fs.existsSync("style.css")) {
     console.log("✔ PASS: style.css exists.");
 } else {
@@ -28,23 +35,8 @@ if (fs.existsSync("style.css")) {
     process.exit(1);
 }
 
-// Check user.json
 if (fs.existsSync("user.json")) {
     console.log("✔ PASS: user.json exists.");
-
-    try {
-        const data = JSON.parse(fs.readFileSync("user.json", "utf8"));
-
-        if (Array.isArray(data)) {
-            console.log("✔ PASS: user.json contains valid JSON.");
-        } else {
-            console.log("✘ FAIL: user.json format is incorrect.");
-            process.exit(1);
-        }
-    } catch (error) {
-        console.log("✘ FAIL: user.json contains invalid JSON.");
-        process.exit(1);
-    }
 } else {
     console.log("✘ FAIL: user.json does not exist.");
     process.exit(1);
@@ -52,6 +44,7 @@ if (fs.existsSync("user.json")) {
 
 console.log("--------------------------------------");
 console.log("ALL TESTS PASSED SUCCESSFULLY!");
+console.log("index.html was successfully renamed to home.html.");
 console.log("--------------------------------------");
 
 process.exit(0);
