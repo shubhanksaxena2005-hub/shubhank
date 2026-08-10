@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration Form</title>
+</head>
+<body bgcolor="#f2f2f2">
+
+<center>
+    <h1>Student Registration Form</h1>
+
+    <form>
+        <table cellpadding="8">
+
+            <tr>
+                <td><b>First Name</b></td>
+                <td><input type="text" name="fname" required></td>
+            </tr>
+
+            <tr>
+                <td><b>Last Name</b></td>
+                <td><input type="text" name="lname" required></td>
+            </tr>
+
+            <tr>
+                <td><b>Roll Number</b></td>
+                <td><input type="text" name="roll" required></td>
+            </tr>
+
+            <tr>
+                <td><b>Email</b></td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+
+            <tr>
+                <td><b>Password</b></td>
+                <td><input type="password" name="password" required></td>
+            </tr>
+
+            <tr>
+                <td><b>Phone Number</b></td>
+                <td><input type="tel" name="phone" required></td>
+            </tr>
+
+            <tr>
+                <td><b>Date of Birth</b></td>
+                <td><input type="date" name="dob"></td>
+            </tr>
+
+            <tr>
+                <td><b>Gender</b></td>
+                <td>
+                    <input type="radio" name="gender"> Male
+                    <input type="radio" name="gender"> Female
+                    <input type="radio" name="gender"> Other
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>Course</b></td>
+                <td>
+                    <select>
+                        <option>Select Course</option>
+                        <option>BCA</option>
+                        <option>B.Tech</option>
+                        <option>B.Sc</option>
+                        <option>B.Com</option>
+                        <option>MCA</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>Address</b></td>
+                <td>
+                    <textarea rows="4" cols="25"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>Hobbies</b></td>
+                <td>
+                    <input type="checkbox"> Reading
+                    <input type="checkbox"> Sports
+                    <input type="checkbox"> Music
+                    <input type="checkbox"> Coding
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>Upload Photo</b></td>
+                <td><input type="file"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</center>
+
+</body>
+</html>

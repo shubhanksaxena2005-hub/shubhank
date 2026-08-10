@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "firstName": "Rahul",
+    "lastName": "Sharma",
+    "email": "rahul.sharma@gmail.com",
+    "phone": "9876543210",
+    "course": "B.Tech Computer Science",
+    "gender": "Male"
+  },
+  {
+    "id": 2,
+    "firstName": "Priya",
+    "lastName": "Verma",
+    "email": "priya.verma@gmail.com",
+    "phone": "9812345678",
+    "course": "BCA",
+    "gender": "Female"
+  },
+  {
+    "id": 3,
+    "firstName": "Aman",
+    "lastName": "Gupta",
+    "email": "aman.gupta@gmail.com",
+    "phone": "9765432109",
+    "course": "B.Tech Information Technology",
+    "gender": "Male"
+  },
+  {
+    "id": 4,
+    "firstName": "Ananya",
+    "lastName": "Singh",
+    "email": "ananya.singh@gmail.com",
+    "phone": "9898765432",
+    "course": "B.Sc Computer Science",
+    "gender": "Female"
+  },
+  {
+    "id": 5,
+    "firstName": "Arjun",
+    "lastName": "Mehta",
+    "email": "arjun.mehta@gmail.com",
+    "phone": "9123456789",
+    "course": "B.Tech Electronics",
+    "gender": "Male"
+  }
+]
